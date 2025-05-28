@@ -13,7 +13,7 @@ tags: [postfix, google, smtp, relay]
 <pre>myhostname = <span style="color: #ff0000;">zuerich.tuxclouds.org</span><br /><br />relayhost = [smtp.gmail.com]:587<br />smtp_use_tls = yes<br />smtp_sasl_auth_enable = yes<br />smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd<br />smtp_tls_CAfile = /etc/ssl/certs/ca-bundle.crt<br />smtp_sasl_security_options = noanonymous<br />smtp_sasl_tls_security_options = noanonymous</pre>
 <p>Setup the secret</p>
 <pre>vim /etc/postfix/sasl_passwd<br />[smtp.gmail.com]:587 <span style="color: #ff0000;">username:password</span></pre>
-<p>Issue the command <a href="http://www.postfix.org/postmap.1.html">postmap</a> to read the new secret</p>
+<p>Issue the command <a href="https://www.postfix.org/postmap.1.html">postmap</a> to read the new secret</p>
 <pre>postmap /etc/postfix/sasl_passwd</pre>
 <p>Set correct owner and permissons</p>
 <pre>chown root:postfix /etc/postfix/sasl_passwd<br />chmod 640 /etc/postfix/sasl_passwd</pre>
