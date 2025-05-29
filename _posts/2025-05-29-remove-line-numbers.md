@@ -7,8 +7,8 @@ tags: [chirpy, code, jekyll, customize]
 ### How to get rid of line numbers in code blocks?
 Edit `_config.yml` so that at reads like this:  
 ```yaml
-  kramdown:
-      syntax_highlighter_opts:  
-          block:  
-              line_numbers: false # defaults to true  
+kramdown:
+  syntax_highlighter: rouge
+    block:
+      line_numbers: false
 ```
