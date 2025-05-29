@@ -12,3 +12,4 @@ kramdown:
     block:
       line_numbers: false
 ```
+{:.custom-code-indent}
