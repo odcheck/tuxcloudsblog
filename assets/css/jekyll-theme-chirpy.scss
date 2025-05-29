@@ -7,12 +7,12 @@
   .bundle
 {%- endif -%}
 ';
+@use 'abstracts/placeholders' as *;
 
 /* append your custom style below */
 
-@use 'abstracts/placeholders' with (
-  %code-snippet-padding {
-    padding-left: 2rem;
-    padding-right: 1.5rem;
-  }
-);
+.my-custom-snippet {
+  @extend %code-snippet-padding;
+  padding-left: 2rem; // override
+  padding-right: 1.5rem; // could be same or changed
+}
