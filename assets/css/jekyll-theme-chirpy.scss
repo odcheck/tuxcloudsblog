@@ -16,15 +16,8 @@
   padding-right: 1rem;
 }
 
-/* 
-  If you previously applied a margin offset to the container and 
-  want to remove it now, you can reset it here. For example:
-  
-  .content div[class^="language-"],
+.content div[class^="language-"],
   figure div[class^="language-"] {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-  
-  Uncomment the code above if needed.
-*/
+}
