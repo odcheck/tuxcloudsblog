@@ -6,8 +6,12 @@
 
 /* Custom style overrides */
 
-
-.highlight td.rouge-code {
-  padding-left: 5rem !important;
-  padding-right: 1.5rem !important;
+/* 
+  Custom override: add a gap to code blocks to prevent them 
+  from being flush with the container edge.
+*/
+.content div[class^="language-"],
+figure div[class^="language-"] {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
