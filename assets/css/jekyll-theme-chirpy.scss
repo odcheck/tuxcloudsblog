@@ -2,16 +2,13 @@
 ---
 
 /* prettier-ignore */
-@use 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
+@use 'main{% if jekyll.environment == "production" %}.bundle{% endif %}';
 
-/* append your custom style below */
+/* Custom style overrides */
 
 .custom-code-indent {
   .highlight td.rouge-code {
     padding-left: 5rem !important;
     padding-right: 1.5rem !important;
   }
+}
