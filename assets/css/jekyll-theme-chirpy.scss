@@ -7,12 +7,11 @@
   .bundle
 {%- endif -%}
 ';
-@use 'abstracts/placeholders' as *;
 
 /* append your custom style below */
 
-.my-custom-snippet {
-  @extend %code-snippet-padding;
-  padding-left: 5rem; // override
-  padding-right: 1.5rem; // could be same or changed
-}
+.custom-code-indent {
+  .highlight td.rouge-code {
+    padding-left: 5rem !important;
+    padding-right: 1.5rem !important;
+  }
