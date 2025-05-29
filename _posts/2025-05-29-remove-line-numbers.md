@@ -1,5 +1,5 @@
 ---
-title: 'Disable line numbers in code blocks jekyll kramdown'
+title: 'Disable line numbers in code blocks jekyll rouge highliter'
 date: 2025-05-29
 categories: [IT]
 tags: [chirpy, code, jekyll, customize]
