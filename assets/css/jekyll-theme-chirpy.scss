@@ -1,0 +1,20 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+.highlight pre {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: .85rem;
+    line-height: 1.4rem;
+    word-wrap: normal;
+}
