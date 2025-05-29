@@ -13,6 +13,6 @@
 
 .my-custom-snippet {
   @extend %code-snippet-padding;
-  padding-left: 2rem; // override
+  padding-left: 5rem; // override
   padding-right: 1.5rem; // could be same or changed
 }
