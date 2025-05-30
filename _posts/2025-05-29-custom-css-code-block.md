@@ -12,7 +12,7 @@ tags: [chirpy, code, jekyll, customize]
 ```css
 /* append your custom style below */
 
-/* fix margin-left of highlight css for code block until I know better
+/* fix margin-left of highlight css for code block until I know better */
 
 .highlight pre {
     margin-bottom: 0;
