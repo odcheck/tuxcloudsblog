@@ -7,8 +7,9 @@ tags: [chirpy, code, jekyll, customize]
 ### Custom css in chirpy theme?
 1. create folder `../assets/css`
 2. add `jekyll-theme-chirpy.scss` from source
-3. append the file like this e.g.
-```
+3. append the file like this e.g.  
+
+```css
 /* append your custom style below */
 
 /* fix margin-left of highlight css for code block until I know better
